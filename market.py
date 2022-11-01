@@ -83,6 +83,7 @@ class Market:
         and it returms the amount of user bill"""
     @staticmethod
     def amount_calculator(product_lst,category,product,quantity):
+            amount=0
             if 'fruits' == category:
                 fruit_per_kg=int(product_lst[0][product][1])
                 amount=fruit_per_kg*quantity
@@ -179,7 +180,9 @@ i=0
 flag=None
 number_of_users=1
 
+
 for user in range(0,100):
+    amount=0
     user=Market()
     phone_number=input('Enter your phonenumber: ')
     username=input('Enter your name: ')
